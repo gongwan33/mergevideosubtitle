@@ -5,7 +5,7 @@ Run `cooker.ps1` in powershell to merge your video, subtitle and wartermark.
 
 ## Important
 
-If you haven't enable script execution on your machine, please start powershell as administration and run the following command:
+If you haven't enabled script execution on your machine, please start powershell as administration and run the following command:
 
 ```
 set-executionpolicy remotesigned
