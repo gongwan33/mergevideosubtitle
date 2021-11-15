@@ -20,4 +20,4 @@ set-executionpolicy remotesigned
 - Choose subtitle foler
 - Type in extension for subtitle. For example: ass or csv.ass or other as needed.
 
-The name of subtitle must be <video_file_name>_ass.<extension>. For example, if the video file name is `sample1.mp4`, and the subtitle extension you typed in is `ass`, the subtitle file name should be set to `sample1_ass.ass`.
+The name of subtitle must be \<video_file_name\>_ass.\<extension\>. For example, if the video file name is `sample1.mp4`, and the subtitle extension you typed in is `ass`, the subtitle file name should be set to `sample1_ass.ass`.
