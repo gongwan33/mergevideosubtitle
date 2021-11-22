@@ -82,11 +82,11 @@ Foreach-Object {
     echo "Subtitle found ..."
     echo "Start processing ..."
 
-    $waterMarkWinPath = $waterMarkPath -replace ":", "\\:"
-    $waterMarkWinPath = $waterMarkWinPath -replace "\\", "\\\\\"
+    $waterMarkWinPath = $waterMarkPath -replace "\\", "\\\\\"
+    $waterMarkWinPath = $waterMarkWinPath -replace ":", "\\:"
 
-    $subtitleFileWinPath = $subtitleFile -replace ":", "\\:"
-    $subtitleFileWinPath = $subtitleFileWinPath -replace "\\", "\\\\\"
+    $subtitleFileWinPath = $subtitleFile -replace "\\", "\\\\\"
+    $subtitleFileWinPath = $subtitleFileWinPath -replace ":", "\\:"
 
     .\ffmpeg.exe -y -i "$videoFullName" -c:v libx264 -vf “movie=${waterMarkWinPath}[wm];[i][wm]overlay=24:10,subtitles=${subtitleFileWinPath}” ${fileName}_ass.mp4
 
